@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Healthy Buck Kids — Premium Interactive Landing Page</title>
-  <meta name="description" content="A premium landing page for Healthy Buck Kids with live micro-games and a family wellness product preview." />
+  <title>Healthy Buck Kids</title>
+  <meta name="description" content="Simple, parent-guided tools that help kids with food, focus, calm, and behavior in real life." />
   <style>
     :root{
       --bg:#f4f7fb;
@@ -85,7 +85,7 @@
       display:grid;grid-template-columns:1.08fr .92fr;gap:18px;align-items:stretch;
     }
     @media (max-width:980px){.hero{grid-template-columns:1fr}}
-    .hero-card,.hero-visual,.section-card,.cta-band,.feature-card,.demo-card,.ecosystem-card{border-radius:var(--radius)}
+    .hero-card,.hero-visual,.section-card,.cta-band,.feature-card,.demo-card,.ecosystem-card,.problem-card,.step-card{border-radius:var(--radius)}
     .hero-card{padding:38px 30px}
     .eyebrow{
       display:inline-flex;align-items:center;gap:8px;
@@ -105,7 +105,7 @@
     }
     .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
     .hero-note{margin-top:14px;color:var(--muted);font-size:.93rem}
-.lead,.small,.section-top p,.demo-head p,.feature-card p,.ecosystem-copy p,.bullet span,.cta-band p,.brand p,footer{color:var(--ink-soft)}
+    .lead,.small,.section-top p,.demo-head p,.feature-card p,.ecosystem-copy p,.bullet span,.cta-band p,.brand p,footer,.problem-list li,.step-card p{color:var(--ink-soft)}
     .choice,.soft-card,.feedback{letter-spacing:-0.01em}
 
     .hero-visual{padding:14px;display:grid;grid-template-rows:auto 1fr;gap:14px}
@@ -137,6 +137,21 @@
     .section-top{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap}
     .section-top h3{margin:8px 0 0;font-size:clamp(1.8rem,3vw,3rem);line-height:1.05}
     .section-top p{margin:8px 0 0;color:var(--muted);max-width:60ch}
+
+    .problem-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:16px;margin-top:18px}
+    @media (max-width:860px){.problem-grid{grid-template-columns:1fr}}
+    .problem-card{padding:22px;background:rgba(255,255,255,.78);border:1px solid rgba(255,255,255,.92);box-shadow:var(--shadow-sm)}
+    .problem-list{margin:0;padding-left:18px;display:grid;gap:10px}
+    .problem-list li{font-size:1rem}
+    .quote-box{padding:18px;border-radius:22px;background:linear-gradient(180deg,rgba(255,255,255,.92),rgba(240,246,253,.96));border:1px solid var(--line);box-shadow:var(--shadow-sm)}
+    .quote-box strong{display:block;font-size:1.1rem;margin-bottom:8px}
+
+    .step-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:18px}
+    @media (max-width:860px){.step-grid{grid-template-columns:1fr}}
+    .step-card{padding:20px;background:rgba(255,255,255,.78);border:1px solid rgba(255,255,255,.92);box-shadow:var(--shadow-sm)}
+    .step-num{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;font-weight:900;background:rgba(31,63,107,.08);color:var(--primary);margin-bottom:12px}
+    .step-card h4{margin:0 0 8px;font-size:1.1rem}
+    .inline-cta{display:flex;justify-content:center;margin-top:18px}
 
     .demo-grid{display:grid;grid-template-columns:repeat(2, minmax(0,1fr));gap:16px;margin-top:18px}
     @media (max-width:860px){.demo-grid{grid-template-columns:1fr}}
@@ -218,45 +233,106 @@
         <div class="brand-mark">HB</div>
         <div>
           <h1>Healthy Buck Kids</h1>
-          <p>Parent-guided interactive wellness for real routines</p>
+          <p>Simple, parent-guided tools for real routines</p>
         </div>
       </a>
       <div class="top-actions">
-        <a class="btn secondary" href="#try">Try it now</a>
-        <a class="btn primary" href="https://healthybuck.substack.com/about#%C2%A7join-us" target="_blank" rel="noopener">Unlock full experience</a>
+        <a class="btn secondary" href="#try">See how it works</a>
+        <a class="btn primary" href="https://healthybuck.substack.com/about#%C2%A7join-us" target="_blank" rel="noopener">Join for full access</a>
       </div>
     </div>
 
     <section class="hero" id="top">
       <div class="hero-card glass">
-        <div class="eyebrow">Premium landing page · interactive product preview</div>
-        <h2 class="display">Kids don’t just read this.<br>They play it — and build real habits.</h2>
-        <p class="lead">Food, behavior, calm, and thinking tools your child can try in seconds — with parent guidance built into the experience from the start.</p>
+        <div class="eyebrow">Built for real families</div>
+        <h2 class="display">Small habits.<br>Big wins — without the daily battles.</h2>
+        <p class="lead">If your child struggles with food, focus, calm, or behavior, this gives you simple tools you can actually use in real life.</p>
         <div class="pill-row">
-          <div class="pill">Parent-first structure</div>
-          <div class="pill">Micro-games that feel real</div>
-          <div class="pill">Clean, high-trust design</div>
-          <div class="pill">Built for everyday family use</div>
+          <div class="pill">🍎 Picky eating</div>
+          <div class="pill">🧠 Focus &amp; thinking</div>
+          <div class="pill">🌿 Calm &amp; regulation</div>
+          <div class="pill">🤝 Social skills</div>
         </div>
         <div class="hero-actions">
-          <a class="btn primary" href="#try">Start the live preview</a>
+          <a class="btn primary" href="#try">Start with one simple tool</a>
           <a class="btn ghost" href="#ecosystem">See the full toolkit</a>
         </div>
-        <div class="hero-note">The experience speaks first — clean, useful, and instantly understandable.</div>
+        <div class="hero-note">No pressure. No overwhelm. Just small steps that add up.</div>
       </div>
 
       <div class="hero-visual glass">
         <div class="stats">
-          <div class="stat"><b>4</b><span>live mini experiences</span></div>
-          <div class="stat"><b>1</b><span>connected family toolkit</span></div>
-          <div class="stat"><b>0</b><span>template energy</span></div>
+          <div class="stat"><b>4</b><span>areas families can try now</span></div>
+          <div class="stat"><b>1</b><span>connected parent-guided toolkit</span></div>
+          <div class="stat"><b>2</b><span>minutes to get started</span></div>
         </div>
         <div class="phone">
-          <div class="phone-bar"><span>Kids Hub preview</span><span>Try a section</span></div>
+          <div class="phone-bar"><span>Healthy Buck Kids</span><span>Start anywhere</span></div>
           <div class="mini-tile grad-1"><small>START HERE</small>Parent Steps</div>
           <div class="mini-tile grad-2"><small>FOOD</small>Picky Eaters</div>
-          <div class="mini-tile grad-3"><small>GAME</small>Navigation Adventure</div>
-          <div class="mini-tile grad-4"><small>CALM</small>Regulation & social wins</div>
+          <div class="mini-tile grad-3"><small>EXPLORE</small>Navigation Adventure</div>
+          <div class="mini-tile grad-4"><small>CALM</small>Regulation &amp; social wins</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-card glass">
+        <div class="section-top">
+          <div>
+            <div class="eyebrow">Does this sound familiar?</div>
+            <h3>The hard part usually is not knowing where to start.</h3>
+          </div>
+          <p>You are not looking for more theory. You are looking for something that helps today.</p>
+        </div>
+
+        <div class="problem-grid">
+          <div class="problem-card">
+            <ul class="problem-list">
+              <li>“My kid refuses to try anything new.”</li>
+              <li>“They get overwhelmed or melt down fast.”</li>
+              <li>“I do not know how to teach focus without a fight.”</li>
+              <li>“I feel like I repeat myself all day.”</li>
+            </ul>
+          </div>
+          <div class="quote-box">
+            <strong>You are not failing.</strong>
+            <p class="lead">Most families do not need a perfect system. They need a simple next step that feels doable, calm, and repeatable.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-card glass">
+        <div class="section-top">
+          <div>
+            <div class="eyebrow">How it works</div>
+            <h3>Start small. Keep it simple. Let it build.</h3>
+          </div>
+          <p>This is designed to lower pressure for both you and your child, while still giving you something concrete to do.</p>
+        </div>
+
+        <div class="step-grid">
+          <div class="step-card">
+            <div class="step-num">1</div>
+            <h4>Pick one area</h4>
+            <p>Start with food, focus, calm, or social skills — whatever your child needs most right now.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">2</div>
+            <h4>Do one small activity</h4>
+            <p>No giant plan. No long setup. Just one simple tool you can try today.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">3</div>
+            <h4>Build momentum</h4>
+            <p>Small wins stack up into real habits over time, without making everything feel heavy.</p>
+          </div>
+        </div>
+
+        <div class="inline-cta">
+          <a class="btn primary" href="#try">Try your first activity</a>
         </div>
       </div>
     </section>
@@ -265,10 +341,10 @@
       <div class="section-card glass">
         <div class="section-top">
           <div>
-            <div class="eyebrow">Try it with your child right now</div>
-            <h3>Four premium micro-games. Instant taste of the real product.</h3>
+            <div class="eyebrow">Try it with your child</div>
+            <h3>Most parents start here.</h3>
           </div>
-          <p>These previews are intentionally short, but they still feel like the real product — practical, guided, and easy to try together.</p>
+          <p>These previews are short on purpose. They give you a real feel for how the tools work without making you dig for it.</p>
         </div>
 
         <div class="demo-grid">
@@ -276,14 +352,14 @@
             <div class="demo-head">
               <div>
                 <h4>🍎 Food Mission</h4>
-                <p>Small tries still count. Track the smell, lick, nibble, or bite without making it a big deal.</p>
+                <p>Make trying new foods feel smaller, calmer, and easier to repeat.</p>
               </div>
-              <div class="badge">Daily mission</div>
+              <div class="badge">Picky eating</div>
             </div>
             <div class="stack">
               <div class="soft-card">
                 <strong id="foodPrompt">Try one new fruit or veggie today.</strong>
-                <div class="small">Goal: build momentum without pressure.</div>
+                <div class="small">Tiny tries still count — smell, lick, nibble, or bite.</div>
               </div>
               <div class="meter">
                 <span style="font-weight:800">Progress</span>
@@ -295,40 +371,40 @@
               <button class="mini-btn food" id="foodTry">I tried it</button>
               <button class="mini-btn alt" id="foodReset">Reset</button>
             </div>
-            <div class="feedback" id="foodFeedback">Even a tiny try counts. Tap it — watch the win stack up.</div>
+            <div class="feedback" id="foodFeedback">Even a tiny try counts. Tap it and watch the win stack up.</div>
           </div>
 
           <div class="demo-card">
             <div class="demo-head">
               <div>
                 <h4>🧭 Navigation Adventure</h4>
-                <p>Everyday clue-finding with concrete choices and quick, confidence-building feedback.</p>
+                <p>Build confidence with simple clue-finding and everyday decision-making.</p>
               </div>
-              <div class="badge">Explorer mode</div>
+              <div class="badge">Focus &amp; thinking</div>
             </div>
             <div class="soft-card">
               <strong>Which place sounds like the best explorer stop?</strong>
-              <div class="small">Think trail, views, open space, and safe clues.</div>
+              <div class="small">Look for clues that feel real, safe, and easy to notice.</div>
             </div>
             <div class="choices">
               <button class="choice" data-nav="true">A natural place with trails, views, or open space</button>
               <button class="choice" data-nav="false">A volcano in the middle of town</button>
             </div>
-            <div class="feedback" id="navFeedback">Go with your gut — real explorers look for clues.</div>
+            <div class="feedback" id="navFeedback">Go with your gut — real explorers follow clues.</div>
           </div>
 
           <div class="demo-card">
             <div class="demo-head">
               <div>
                 <h4>🌿 Calm Tool</h4>
-                <p>A fast reset for busy bodies and big feelings — simple enough to use in the moment.</p>
+                <p>A fast reset for big feelings, busy bodies, and hard transitions.</p>
               </div>
-              <div class="badge">Calm corner</div>
+              <div class="badge">Calm &amp; regulation</div>
             </div>
             <div class="stack">
               <div class="soft-card">
                 <strong>Press once and breathe together.</strong>
-                <div class="small">In for 4. Out for 4. Keep the tone quiet and simple.</div>
+                <div class="small">In for 4. Out for 4. Keep it quiet and simple.</div>
               </div>
               <div class="meter">
                 <span style="font-weight:800">Calm wins</span>
@@ -340,26 +416,26 @@
               <button class="mini-btn calm" id="calmBtn">Breathe now</button>
               <button class="mini-btn alt" id="calmReset">Reset</button>
             </div>
-            <div class="feedback" id="calmFeedback">One breath. That’s it. Start there.</div>
+            <div class="feedback" id="calmFeedback">One breath. That is enough to start.</div>
           </div>
 
           <div class="demo-card">
             <div class="demo-head">
               <div>
-                <h4>🧠 Wit & Kindness</h4>
-                <p>Practice the kind of response that is calm, clever, and actually useful.</p>
+                <h4>🧠 Wit &amp; Kindness</h4>
+                <p>Practice responses that are calm, clear, respectful, and useful in real life.</p>
               </div>
-              <div class="badge">Social thinking</div>
+              <div class="badge">Social skills</div>
             </div>
             <div class="soft-card">
               <strong>Someone is using the toy you want. What is the smartest move?</strong>
               <div class="small">Look for kind, clear, confident language.</div>
             </div>
             <div class="choices">
-              <button class="choice" data-wit="true">“Can I have a turn when you’re done, please?”</button>
+              <button class="choice" data-wit="true">“Can I have a turn when you are done, please?”</button>
               <button class="choice" data-wit="false">“Move. I want it now.”</button>
             </div>
-            <div class="feedback" id="witFeedback">Which one actually works in real life?</div>
+            <div class="feedback" id="witFeedback">Which one actually works better in real life?</div>
           </div>
         </div>
       </div>
@@ -369,32 +445,32 @@
       <div class="section-card glass">
         <div class="section-top">
           <div>
-            <div class="eyebrow">What this actually helps with</div>
-            <h3>Built for the moments families deal with every day.</h3>
+            <div class="eyebrow">What this helps with</div>
+            <h3>Built around the moments families actually deal with every day.</h3>
           </div>
-          <p>This is not passive reading. It is a guided toolkit built to support cooperation, regulation, trying, learning, and follow-through.</p>
+          <p>These are not passive screens. They are simple, guided tools designed to support repetition, confidence, and follow-through.</p>
         </div>
 
         <div class="feature-grid">
           <div class="feature-card">
             <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3v8"/><path d="M10 3v8"/><path d="M4 3v8"/><path d="M4 11c0 5 3 10 3 10"/><path d="M17 3c-2 2-3 4.5-3 8v10"/><path d="M14 11h6"/></svg></div>
             <h4>Picky eating support</h4>
-            <p>Turn new foods into low-pressure missions with visible progress and playful reward loops.</p>
+            <p>Turn new foods into low-pressure tries with visible progress and less friction.</p>
           </div>
           <div class="feature-card">
             <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="m10 10 6-2-2 6-6 2 2-6Z"/></svg></div>
-            <h4>Navigation + confidence</h4>
-            <p>Build clue-following, environmental thinking, and simple decision-making in a friendly format.</p>
+            <h4>Focus + confidence</h4>
+            <p>Build clue-following, simple decision-making, and confidence through play.</p>
           </div>
           <div class="feature-card">
             <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 20c7 0 12-5 12-12-7 0-12 5-12 12Z"/><path d="M8 16c2-2 4.5-4 8-6"/></svg></div>
             <h4>Calm + body regulation</h4>
-            <p>Offer children fast, concrete tools they can use during overwhelm, frustration, or transitions.</p>
+            <p>Offer children fast, concrete tools they can use during overwhelm or transitions.</p>
           </div>
           <div class="feature-card">
             <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 18l-2 3v-5a7 7 0 0 1 7-7h5a4 4 0 0 1 4 4v1a4 4 0 0 1-4 4H6Z"/><path d="M8 13h8"/><path d="M8 16h5"/></svg></div>
             <h4>Social thinking</h4>
-            <p>Practice kind language, clue reading, respectful tone, and smarter real-life responses.</p>
+            <p>Practice kind language, clue reading, respectful tone, and smarter responses.</p>
           </div>
         </div>
       </div>
@@ -403,13 +479,13 @@
     <section class="section" id="ecosystem">
       <div class="ecosystem-card glass">
         <div class="ecosystem-copy">
-          <div class="eyebrow">The full experience</div>
-          <h3>The newsletter is just the introduction. The full system is the product.</h3>
-          <p>Healthy Buck connects daily routines across food, movement, calm, behavior support, and progress tracking. The landing page should make that feel obvious without clutter, noise, or template energy.</p>
+          <div class="eyebrow">Why families stay</div>
+          <h3>This is more than content. It is one connected toolkit.</h3>
+          <p>Healthy Buck works best because the tools support each other. Food, calm, movement, thinking, routines, and parent steps all connect instead of living in separate random resources.</p>
           <div class="bullet-list">
-            <div class="bullet"><div class="spark">✦</div><div><b>Parent steps first</b><span>Caregivers can lead the interaction instead of handing over a random game.</span></div></div>
-            <div class="bullet"><div class="spark">✦</div><div><b>Kid-facing tools that feel usable</b><span>Micro-games, missions, progress, and feedback create momentum.</span></div></div>
-            <div class="bullet"><div class="spark">✦</div><div><b>One connected family toolkit</b><span>Nutrition, movement, calm, routines, and behavior support work together.</span></div></div>
+            <div class="bullet"><div class="spark">✦</div><div><b>Parent steps first</b><span>You know how to guide the moment instead of guessing what to do next.</span></div></div>
+            <div class="bullet"><div class="spark">✦</div><div><b>Kid-facing tools that feel doable</b><span>Simple interactions help children participate without making everything feel like a lesson.</span></div></div>
+            <div class="bullet"><div class="spark">✦</div><div><b>Consistency over perfection</b><span>The goal is not doing everything. The goal is building enough momentum to keep going.</span></div></div>
           </div>
         </div>
         <div class="ecosystem-shot">
@@ -419,17 +495,18 @@
     </section>
 
     <section class="cta-band glass">
-      <div class="eyebrow">Ready to unlock the full experience?</div>
-      <h3>Give families more than content. Give them something their kids will actually use.</h3>
-      <p>A premium landing page should make the product feel immediate: try it, get it, then unlock the full toolkit.</p>
+      <div class="eyebrow">Start with one small win today</div>
+      <h3>You do not need a perfect plan. You just need a place to begin.</h3>
+      <p>Use the free preview to see what clicks, then unlock the full toolkit when you are ready for more support.</p>
       <div class="cta-actions">
-        <a class="btn primary" href="https://healthybuck.substack.com/about#%C2%A7join-us" target="_blank" rel="noopener">Unlock full experience</a>
-        <a class="btn secondary" href="#try">Replay the mini-games</a>
+        <a class="btn primary" href="https://healthybuck.substack.com/about#%C2%A7join-us" target="_blank" rel="noopener">Join for full access</a>
+        <a class="btn secondary" href="#try">Try the previews again</a>
       </div>
+      <p class="hero-note">No pressure. Just tools you can actually use.</p>
     </section>
 
     <footer>
-      Healthy Buck Kids premium landing page concept — no veteran badge, no cartoon clutter, no fake-template feel.
+      Healthy Buck Kids — parent-guided tools for food, focus, calm, and real-life growth.
     </footer>
   </div>
 
@@ -437,7 +514,7 @@
     let foodProgress = 0;
     const foodMessages = [
       'Nice start — even a smell or tiny taste counts.',
-      'Nice — that still counts. Small wins build trust.',
+      'That still counts. Small wins build trust.',
       'That is the goal: momentum, not pressure.',
       '⭐ Nice work — Food Explorer unlocked.'
     ];
@@ -462,7 +539,7 @@
       foodFill.style.width = '0%';
       foodCount.textContent = '0%';
       foodPrompt.textContent = 'Try one new fruit or veggie today.';
-      foodFeedback.textContent = 'Even a tiny try counts. Tap it — watch the win stack up.';
+      foodFeedback.textContent = 'Even a tiny try counts. Tap it and watch the win stack up.';
     });
 
     const navFeedback = document.getElementById('navFeedback');
@@ -496,7 +573,7 @@
       calmWins = 0;
       calmFill.style.width = '0%';
       calmCount.textContent = '0';
-      calmFeedback.textContent = 'One breath. That’s it. Start there.';
+      calmFeedback.textContent = 'One breath. That is enough to start.';
     });
 
     const witFeedback = document.getElementById('witFeedback');
